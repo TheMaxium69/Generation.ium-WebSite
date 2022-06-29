@@ -1,3 +1,3 @@
-# MySiteTemplate
+# Generation.ium-WebSite
 
-Mon template de site web
+Site Officiel de Génération IUM
