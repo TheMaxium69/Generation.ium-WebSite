@@ -2,7 +2,7 @@
 <body> 
     <header> 
         <?php navbar($page); ?>
-        <?php header(); ?>
+        <?php top(); ?>
     </header>
 
 <main>
