@@ -2,10 +2,14 @@
 <body> 
     <header> 
         <?php navbar($page); ?>
-        <?php top(); ?>
     </header>
 
 <main>
+
+    <section id="bg-index" class="container-fluid">
+        <div class="flags"></div>
+        <div class="join-container"></div>
+    </section>
 
     <?php generation(); ?>
 

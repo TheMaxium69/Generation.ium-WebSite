@@ -1,0 +1,21 @@
+#bg-index{
+    height: 450px;
+    width: 100%;
+    display: flex;
+}
+
+#bg-index .flags{
+width: 70%;
+height: 100%;
+background-image: url(../assets/image_fond.png);
+background-size: cover;
+}
+
+#bg-index .join-container{
+width: 30%;
+height: 100%;
+background-color: #0010A0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
