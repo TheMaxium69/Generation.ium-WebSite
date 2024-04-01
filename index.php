@@ -8,7 +8,9 @@
 
     <section id="bg-index" class="container-fluid">
         <div class="flags"></div>
-        <div class="join-container"></div>
+        <div class="join-container">
+            <?php joinForm(); ?>
+        </div>
     </section>
 
     <?php generation(); ?>

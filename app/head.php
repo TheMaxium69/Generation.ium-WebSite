@@ -5,7 +5,7 @@ function head($page)
 
     //Page
     if ($page == 1) {
-        $title = "Generation IUM";
+        $title = "Génération IUM";
     } else {
         $title = "404 | Exemple";
     }
