@@ -9,3 +9,4 @@ require_once "./function/navbar.php";
 require_once "./function/generation.php";
 require_once "./function/footer.php";
 require_once "./function/joinForm.php";
+require_once "./function/badge.php";

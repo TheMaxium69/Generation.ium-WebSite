@@ -14,6 +14,7 @@
     </section>
 
     <?php generation(); ?>
+    <?php badge(); ?>
 
 </main>
 
