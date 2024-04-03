@@ -6,7 +6,7 @@
 
 <main>
 
-    <section id="bg-index" class="container-fluid">
+    <section id="bg-index">
         <div class="flags"></div>
         <div class="join-container">
             <?php joinForm(); ?>
