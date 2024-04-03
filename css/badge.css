@@ -25,10 +25,12 @@
 #independantBadge h2 {
     color: red;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #independantBadge p {
     color: white;
+    text-align: center;
 }
 
 /* "union" CSS */
@@ -44,10 +46,12 @@
 #unionBadge h2 {
     color: red;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #unionBadge p {
     color: white;
+    text-align: center;
 }
 
 /* "mouvement" CSS */
@@ -62,8 +66,10 @@
 #mouvementBadge h2 {
     color: red;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #mouvementBadge p {
     color: white;
+    text-align: center;
 }
