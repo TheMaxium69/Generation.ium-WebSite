@@ -1,28 +1,35 @@
 #joinForm{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 5px;
     background-color: white;
     border-radius: 15px;
     padding: 15px;
-    width: 75%;
+    padding-top:15px;
+    width: 70%;
+    box-shadow:-2px 1px 25px -6px rgba(0,0,0,0.75);
+    height: 380px;
 }
 
 #joinForm h3{
+    font-size: 37px;
     font-weight: 400;
+    margin-top: 20px;
 }
 
 #joinForm p{
     font-size: 11px;
+    margin-bottom: 30px;
 }
 
 #joinForm .fields{
-    padding:10px;
+    padding:12px;
     border-radius: 10px;
     border: none;
-    box-shadow: inset 0px 1px 7px 1px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 3px 5px 1px rgba(0,0,0,0.5);
+    width:90%
 }
 
 #joinForm .formButton{
@@ -33,4 +40,5 @@
     color: white;
     background: rgb(5,2,183);
     background: linear-gradient(90deg, rgba(5,2,183,1) 0%, rgba(163,1,1,1) 100%);
+    margin-bottom:15px;
 }

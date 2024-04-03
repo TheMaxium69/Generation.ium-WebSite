@@ -1,5 +1,5 @@
 #bg-index{
-    height: 500px;
+    height: 700px;
     width: 100%;
     display: flex;
 }
@@ -22,9 +22,12 @@ align-items: center;
 
 
 .generation-border-bottom{
-    /* margin-top: 50px;
+    width: 992px;
+    height:4px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 150px;
     width: 85%;
-    border: solid;
     background: rgb(5,2,183);
-    background: linear-gradient(90deg, rgba(5,2,183,1) 0%, rgba(163,1,1,1) 100%); */
+    background: linear-gradient(90deg, rgba(5,2,183,1) 0%, rgba(163,1,1,1) 100%);
 }
