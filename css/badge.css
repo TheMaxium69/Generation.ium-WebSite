@@ -5,60 +5,65 @@
     justify-content: space-around;
 }
 
+.badgeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 250px;
+}
+
 /* "independant" CSS */
-
-#independant {
-    flex: 1;
-    text-align: center;
-}
-
-#independant img {
-    width: 41px;
-    border-radius: 15px;
-    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
-    padding: 10px;
-}
 
 #independantBadge {
     border-radius: 15px;
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
     background-color: #0010A0;
+    height: 350px;
+}
+
+#independantBadge h2 {
+    color: red;
+    text-transform: uppercase;
+}
+
+#independantBadge p {
+    color: white;
 }
 
 /* "union" CSS */
 
-#union {
-    flex: 1;
-    text-align: center;
-}
-
-#union img {
-    width: 135px;
-    border-radius: 15px;
-    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
-}
 
 #unionBadge {
     border-radius: 15px;
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
     background-color: #0010A0;
+    height: 350px;
+}
+
+#unionBadge h2 {
+    color: red;
+    text-transform: uppercase;
+}
+
+#unionBadge p {
+    color: white;
 }
 
 /* "mouvement" CSS */
-
-#mouvement {
-    flex: 1;
-    text-align: center;
-}
-
-#mouvement img {
-    width: 180px;
-    border-radius: 15px;
-    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
-}
 
 #mouvementBadge {
     border-radius: 15px;
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
     background-color: #0010A0;
+    height: 350px;
+}
+
+#mouvementBadge h2 {
+    color: red;
+    text-transform: uppercase;
+}
+
+#mouvementBadge p {
+    color: white;
 }
