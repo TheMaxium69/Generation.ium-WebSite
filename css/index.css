@@ -21,3 +21,10 @@ align-items: center;
 }
 
 
+.generation-border-bottom{
+    /* margin-top: 50px;
+    width: 85%;
+    border: solid;
+    background: rgb(5,2,183);
+    background: linear-gradient(90deg, rgba(5,2,183,1) 0%, rgba(163,1,1,1) 100%); */
+}

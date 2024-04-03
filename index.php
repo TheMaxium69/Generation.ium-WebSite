@@ -14,9 +14,12 @@
     </section>
 
     <?php generation(); ?>
+
+    <div class="generation-border-bottom"></div>
+
     <?php badge(); ?>
     <?php goals(); ?>
-
+    <?php socialNetworks(); ?>
 
 
 </main>

@@ -11,3 +11,4 @@ require_once "./function/footer.php";
 require_once "./function/joinForm.php";
 require_once "./function/badge.php";
 require_once "./function/goals.php";
+require_once "./function/socialNetworks.php";
