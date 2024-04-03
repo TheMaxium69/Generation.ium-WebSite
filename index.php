@@ -15,6 +15,9 @@
 
     <?php generation(); ?>
     <?php badge(); ?>
+    <?php goals(); ?>
+
+
 
 </main>
 
