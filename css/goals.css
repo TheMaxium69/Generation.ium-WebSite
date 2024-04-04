@@ -2,6 +2,7 @@
     height: 600px;
     justify-content: center;
     display: flex;
+    max-width: 100%;
 }
 
 #goals .goals{

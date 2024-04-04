@@ -11,6 +11,7 @@
     width: 70%;
     box-shadow:-2px 1px 25px -6px rgba(0,0,0,0.75);
     height: 380px;
+    max-width: 100%;
 }
 
 #joinForm h3{
