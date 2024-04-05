@@ -14,6 +14,7 @@
     top: -35px;
     z-index: 2;
     background-color: white;
+    max-width: 100%;
 }
 
 .generationcard {
@@ -39,7 +40,7 @@
 @media (max-width: 992px){
 
     .generationcard {
-        max-width: 400px;
+        max-width: 500px;
     }
 
     .generationcard img {
@@ -54,10 +55,7 @@
         align-items: center;
         width: 100%;
         font-size: 15px;
-
         margin-left: 0px;
         margin-right: 0px;
-        /* margin: 10px; */
-        
     }
 }
