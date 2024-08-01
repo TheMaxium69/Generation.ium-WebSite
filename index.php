@@ -5,14 +5,15 @@
 
 <header> <?php $cp_navbar(); ?> </header>
 
-<main>
 
-    <p><?= $env_titre ?></p>
+<main>
+    <?php $cp_hero(); ?>
+    <?php $cp_generation(); ?>
 
 </main>
 
 
-<?php $js_exemple(); ?>
+<footer> <?php $cp_footer(); ?></footer>
 
 
 
