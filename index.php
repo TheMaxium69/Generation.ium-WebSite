@@ -13,7 +13,7 @@
 </main>
 
 
-<footer> <?php $cp_footer(); ?></footer>
+<?php $cp_footer(); ?>
 
 
 
