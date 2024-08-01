@@ -9,7 +9,9 @@
 <main>
     <?php $cp_hero(); ?>
     <?php $cp_generation(); ?>
+    <?php $cp_cardsIum(); ?>
     <?php $cp_objectif(); ?>
+    <?php $cp_cardsSociaux(); ?>
 </main>
 
 
