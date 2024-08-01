@@ -9,7 +9,7 @@
 <main>
     <?php $cp_hero(); ?>
     <?php $cp_generation(); ?>
-
+    <?php $cp_objectif(); ?>
 </main>
 
 
