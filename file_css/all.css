@@ -15,3 +15,21 @@
   --bg-resaux: #efb9b5;
   --title-reseau: #0904ff;
 }
+
+.custom-button {
+  background: linear-gradient(to right, #0502b7, #a30101); 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px; 
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3); 
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; 
+}
+
+
+.custom-button:hover {
+  transform: scale(1.05); 
+}
+
