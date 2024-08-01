@@ -3,7 +3,7 @@
 
 
 
-<header> <?php $cp_navbar(); ?> </header>
+<header> <?php $cp_navbar(); ?></header>
 
 <main>
 
@@ -12,10 +12,9 @@
 </main>
 
 
-<?php $js_exemple(); ?>
 
 
-
+<?php $cp_footer(); ?>
 
 
 
