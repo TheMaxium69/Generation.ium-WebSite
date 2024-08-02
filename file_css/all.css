@@ -2,23 +2,25 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Inter" sans-serif;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
 }
 
 :root {
+  /* Couleurs principales */
   --bg: #00109B;
   --IUM: #FF0000;
+  
+  /* Couleurs secondaires */
   --bg-objectif: #950000;
   --bg-resaux: #efb9b5;
   --title-reseau: #0904ff;
 }
 
 .custom-button {
-  background: linear-gradient(to right, #0502b7, #a30101); 
-
+  background: linear-gradient(to right, #0502b7, #a30101);
   color: white;
   padding: 5px 40px;
   font-size: 20px;
@@ -28,8 +30,6 @@
   transition: transform 0.2s ease-in-out; 
 }
 
-
 .custom-button:hover {
   transform: scale(1.05); 
 }
-
