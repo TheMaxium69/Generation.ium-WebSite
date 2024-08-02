@@ -1,8 +1,8 @@
 <section id="generation">
   <div class="d-flex justify-content-center">
-    <div class="col-6 bg-white card-generation shadow mb-5">
-      <div class="d-flex justify-content-center">
-        <div class="bg-img my-5" style="background-image:url('file_assets/title-generation.png')"></div>
+    <div class="  col-lg-8 col-md-9 col-sm-10 col-10 bg-white card-generation shadow mb-5">
+      <div class="d-flex justify-content-center m-4 ">
+        <img src="file_assets/title-generation.png" class="img-fluid" alt="">
       </div>
       <div class="mb-5 mx-5 text-center">
         <p>Le premier mouvement français pour défendre la nouvelle génération d'entrepreneurs, de créateurs de contenu, d'artistes et de métiers d'internet. Ceux qui se lèvent tôt pour leurs projets et objectifs.</p>
@@ -14,11 +14,7 @@
 </section>
 
 <style>
-  #generation .bg-img {
-    width: 470px;
-    height: 66px;
-  }
-
+  #generation 
   .card-generation {
     display: flex;
     flex-direction: column;
@@ -26,6 +22,37 @@
     border-radius: 20px;
     background-color: white;
     position: relative;
-    top: -40px;
+    top: -30px;
   }
+
+  @media (max-width: 768px) {
+   
+    .card-generation {
+      margin: 0 15px;
+    }
+
+    .mb-5.mx-4 {
+      margin: 0 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    
+   
+    .card-generation {
+      margin: 0 10px;
+      
+    }
+
+    .mb-5.mx-4 {
+      margin: 0 5px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+
 </style>
