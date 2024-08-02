@@ -1,51 +1,62 @@
 <section id="objectif">
 
+    <div class="container-fluid margin-b">
 
+        <div class="row no-gutters">
+            <div class="col-lg-6 p-0">
+                <div class="bg-objectif m-0 p-4">
+                    <div class="pb-4">
+                        <h2>Notre Objectif</h2>
+                    </div>
+                    <div>
+                        <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0">
+                <div class="h-100">
+                    <img src="file_assets/hero-image.png" class="h-100 w-100">
+                </div>
+            </div>
 
-<div class="col-6">
-    <div class="bg-objectif">
-        <div class="margin-h2">
-            <h2>Notre Objectif</h2>
-        </div>
-    
-        <div class="margin-p">
-            <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
         </div>
 
     </div>
-</div>
-
-  <div class="col-6">
-    <div>
-        <div class="bg-img" style="background-image:url('file_assets/hero-image.png')">
-    </div>
-  </div>
-    
 </section>
+
+
+
+
 
 <style>
     #objectif{
         display: flex;
+        
+        .margin-b{
+            margin-bottom: 200px;
+        }
         .bg-objectif{
             background: var(--bg-objectif);
-            height: 500px;;
+            width:500;
+            height: 500px;
             color:white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        .margin-h2{
-            padding: 50px 50px 10px;
-            font-weight: bold;
+        .bg-img{
+            height: 600px;
         }
-        .margin-p{
-            margin-top: 50px;
-            padding: 10px 50px;
-            font-weight: bold;
-        }
+
         .bg-img {
-              background-repeat: no-repeat;
-              background-size: cover;
-              width: 100%;
               height: 500px; 
+            }
+            
+            
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
             } 
     }
 </style>
