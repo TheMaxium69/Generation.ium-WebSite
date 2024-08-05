@@ -1,21 +1,19 @@
 <section id="footer">
     <footer class="custom-footer text-center text-white">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 logo d-flex flex-column align-items-center">
-                    <a href="index.php">
-                        <img src="<?= $env_logo ?>" alt="Logo" class="mx-2" width="100" height="300">
-                    </a>
-                    <h4 class="mt-2">GENERATION IUM</h4>
+                    <div style="background-image: url(<?= $env_logo ?>); width: 181px; height: 181px; border-radius:15px;"></div>
+                    <h2 class="mt-2 mb-3">GENERATION IUM</h2>
                 </div>
-                <div class="col-12 d-flex justify-content-between mt-4">
+                <div class="col-12 d-flex justify-content-between">
                     <button onclick="window.location.href = 'https://tyrolium.fr';" type="button" class="btn btn-primary btn-lg mx-2">LEGAL</button>
                     <button onclick="window.location.href = 'https://discord.gg/mtDx9ceS7n';" type="button" class="btn btn-primary btn-lg mx-2">ADHERE</button>
                     <button onclick="window.location.href = 'https://tyrolium.fr/contact';" type="button" class="btn btn-primary btn-lg mx-2">CGU</button>
                 </div>
-                <div class="col-12 mt-4">
+                <div class="col-12 mt-3">
                     <div class="border-top">
-                        <p>Copyright © 2024, All Right Reserved Génération IUM</p>
+                        <h5 class="mt-2 ">Copyright © 2024, All Right Reserved Génération IUM</h5>
                     </div>                        
                 </div>
             </div>
@@ -24,20 +22,19 @@
 </section>
 
 
+
 <style>
     #footer{
 
             
     background: var(--bg);
     width:100%;
-    height: 300px;
+    height: 400px;
     padding: 20px 0;
    
             
 
-.logo img {
-    height: 70px;
-    }
+
 
 .logo h2 {
     margin: 0;
