@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+      <html lang="fr">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mentions Légales - Génération IUM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* Styles de dégradé IUM repris de index.html */
+    .bg-gradient-ium {
+      background-image: linear-gradient(to right, #32479F, #822E9E, #D31C2A);
+    }
+    .text-gradient-ium {
+      background-image: linear-gradient(to right, #32479F, #822E9E, #D31C2A);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    /* Style des titres de section repris de index.html */
+    .section-title {
+      @apply text-3xl sm:text-4xl font-bold mb-6 text-center;
+      color: #32479F;
+    }
+    /* Styles de navigation repris de index.html */
+    .nav-link {
+      @apply px-3 py-2 text-gray-700 hover:text-[#822E9E] rounded-md transition-colors duration-300 font-medium text-sm;
+    }
+    .btn-nav-adhesion {
+      @apply font-semibold rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 text-white py-2 px-4 text-xs sm:text-sm bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 hover:from-blue-700 hover:via-purple-700 hover:to-red-700 focus:ring-purple-500;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+    <a href="index.html#accueil" class="flex items-center">
+      <img src="unknown1.jpg" alt="Logo Génération IUM" class="h-10 sm:h-12 w-auto mr-2 sm:mr-3" onerror="this.src='https://placehold.co/100x100/32479F/FFFFFF?text=IUM'; this.onerror=null;">
+      <span class="font-extrabold text-xl sm:text-2xl text-[#32479F]">Génération <span class="text-[#D31C2A]">IUM</span></span>
+    </a>
+    <div class="hidden md:flex items-center space-x-2 lg:space-x-3">
+      <a href="index.html#accueil" class="nav-link">Accueil</a>
+      <a href="index.html#generation-ium" class="nav-link">Le Mouvement</a>
+      <a href="index.html#nos-valeurs" class="nav-link">Nos Valeurs</a>
+      <a href="index.html#objectif" class="nav-link">Objectif</a>
+      <a href="index.html#rejoindre" class="nav-link">Contact</a>
+      <a href="index.html#hero-adhesion-form" class="btn-nav-adhesion">J'ADHÈRE</a>
+    </div>
+    <div class="md:hidden flex items-center">
+      <a href="index.html#hero-adhesion-form" class="btn-nav-adhesion mr-2">J'ADHÈRE</a>
+      <button id="mobile-menu-button" class="text-gray-700 focus:outline-none p-2">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg border-t border-gray-200">
+    <a href="index.html#accueil" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200">Accueil</a>
+    <a href="index.html#generation-ium" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200">Le Mouvement</a>
+    <a href="index.html#nos-valeurs" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200">Nos Valeurs</a>
+    <a href="index.html#objectif" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200">Objectif</a>
+    <a href="index.html#rejoindre" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200">Contact</a>
+  </div>
+</header>
+
+<main class="py-16 md:py-24">
+  <div class="container mx-auto px-4 sm:px-6 max-w-4xl">
+    <h1 class="section-title mb-10">Mentions Légales</h1>
+
+    <section class="bg-white p-8 rounded-xl shadow-lg mb-8">
+      <h2 class="text-2xl font-bold text-[#32479F] mb-4">1. Éditeur du Site</h2>
+      <p class="text-gray-700 leading-relaxed">
+        <strong>Nom de l'association/organisation :</strong> Génération IUM<br>
+        <strong>Forme juridique :</strong> Association loi 1901 (à confirmer si c'est la bonne forme juridique)<br>
+        <strong>Adresse du siège social :</strong> [Votre adresse complète ici]<br>
+        <strong>Numéro de téléphone :</strong> [Votre numéro de téléphone ici]<br>
+        <strong>Adresse e-mail :</strong> [Votre adresse e-mail de contact ici]<br>
+        <strong>Représentant légal :</strong> Maxime Tournier, en tant que Fondateur et PDG.
+      </p>
+    </section>
+
+    <section class="bg-white p-8 rounded-xl shadow-lg mb-8">
+      <h2 class="text-2xl font-bold text-[#32479F] mb-4">2. Directeur de la Publication</h2>
+      <p class="text-gray-700 leading-relaxed">
+        <strong>Nom :</strong> Maxime Tournier<br>
+        <strong>Contact :</strong> [Votre adresse e-mail ou contact professionnel ici]
+      </p>
+    </section>
+
+    <section class="bg-white p-8 rounded-xl shadow-lg mb-8">
+      <h2 class="text-2xl font-bold text-[#32479F] mb-4">3. Hébergeur du Site</h2>
+      <p class="text-gray-700 leading-relaxed">
+        <strong>Nom de l'hébergeur :</strong> [Nom de votre hébergeur, ex: OVH, Gandi, AWS, Google Cloud]<br>
+        <strong>Adresse de l'hébergeur :</strong> [Adresse du siège social de l'hébergeur]<br>
+        <strong>Numéro de téléphone de l'hébergeur :</strong> [Numéro de téléphone de l'hébergeur]<br>
+        <strong>Site web de l'hébergeur :</strong> https://www.hostinger.com/fr/hebergement-web
+      </p>
+    </section>
+
+    <section class="bg-white p-8 rounded-xl shadow-lg mb-8">
+      <h2 class="text-2xl font-bold text-[#32479F] mb-4">4. Propriété Intellectuelle</h2>
+      <p class="text-gray-700 leading-relaxed">
+        L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
+      </p>
+      <p class="text-gray-700 leading-relaxed mt-4">
+        La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication.
+      </p>
+    </section>
+
+    <section class="bg-white p-8 rounded-xl shadow-lg mb-8">
+      <h2 class="text-2xl font-bold text-[#32479F] mb-4">5. Données Personnelles</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Génération IUM s'engage à ce que la collecte et le traitement de vos données, effectués à partir du présent site, soient conformes au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés.
+      </p>
+      <p class="text-gray-700 leading-relaxed mt-4">
+        Pour toute information ou pour exercer vos droits d'accès, de rectification, de suppression et d'opposition de vos données personnelles, vous pouvez nous contacter par e-mail à : [Votre adresse e-mail de contact ici].
+      </p>
+    </section>
+
+    <section class="bg-white p-8 rounded-xl shadow-lg mb-8">
+      <h2 class="text-2xl font-bold text-[#32479F] mb-4">6. Cookies</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Le site Génération IUM peut être amené à vous demander l'acceptation des cookies pour des besoins de statistiques et d'affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez. Il contient plusieurs données qui sont stockées sur votre ordinateur dans un simple fichier texte auquel un serveur accède pour lire et enregistrer des informations.
+      </p>
+    </section>
+
+    <section class="bg-white p-8 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-bold text-[#32479F] mb-4">7. Liens Hypertextes</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Le site Génération IUM peut offrir des liens vers d'autres sites internet ou d'autres ressources disponibles sur Internet. Génération IUM ne dispose d'aucun moyen de contrôler les sites en connexion avec ses sites internet. Génération IUM ne répond pas de la disponibilité de tels sites et sources externes, ni ne la garantit. Elle ne peut être tenue pour responsable de tout dommage, de quelque nature que ce soit, résultant du contenu de ces sites ou sources externes, et notamment des informations, produits ou services qu’ils proposent, ou de tout usage qui peut être fait de ces éléments. Les risques liés à cette utilisation incombent pleinement à l'internaute, qui doit se conformer à leurs conditions d'utilisation.
+      </p>
+    </section>
+  </div>
+</main>
+
+<footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="container mx-auto px-4 sm:px-6 text-center">
+    <img src="unknown1.jpg" alt="Logo Génération IUM" class="h-20 w-auto mx-auto mb-4 rounded-md" onerror="this.src='https://placehold.co/180x180/FFFFFF/32479F?text=IUM&font=inter'; this.onerror=null;">
+    <h2 class="text-2xl font-bold text-white mb-6">GÉNÉRATION IUM</h2>
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 mb-6 text-sm">
+      <a href="#legal" class="hover:text-white transition-colors duration-300">Mentions Légales</a>
+      <a href="index.html#hero-adhesion-form" class="hover:text-white transition-colors duration-300">Adhérer</a>
+      <a href="#cgu" class="hover:text-white transition-colors duration-300">Conditions Générales d'Utilisation</a>
+      <a href="index.html#rejoindre" class="hover:text-white transition-colors duration-300">Contact</a>
+    </div>
+    <div class="border-t border-gray-700 pt-6">
+      <p class="text-sm">&copy; <span id="currentYear"></span> Génération IUM. Tous droits réservés.</p>
+      <p class="text-xs mt-1">Mouvement politique français pour la nouvelle génération.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Script pour le menu mobile (repris de index.html)
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Fermer le menu mobile lors du clic sur un lien (repris de index.html)
+  document.querySelectorAll('#mobile-menu a, .nav-link, header a[href^="index.html#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      if (mobileMenu && !mobileMenu.classList.contains('hidden')) { // Vérifie si mobileMenu existe et est visible
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  });
+
+  // Mise à jour de l'année dans le pied de page (repris de index.html)
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

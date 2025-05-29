@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Génération IUM - Le Mouvement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .bg-gradient-ium {
+            background-image: linear-gradient(to right, #32479F, #822E9E, #D31C2A);
+        }
+        .text-gradient-ium {
+            background-image: linear-gradient(to right, #32479F, #822E9E, #D31C2A);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .section-title {
+            @apply text-3xl sm:text-4xl font-bold mb-6 text-center;
+            color: #32479F;
+        }
+        .nav-link {
+            @apply px-3 py-2 text-gray-700 hover:text-[#822E9E] rounded-md transition-colors duration-300 font-medium text-sm;
+        }
+        .btn {
+            @apply font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2;
+        }
+        .hero-cta-button {
+            @apply btn bg-white text-red-600 py-3 px-6 text-lg border-2 border-red-600 hover:bg-red-50 hover:text-red-700 focus:ring-red-500;
+        }
+        .btn-form-submit {
+            @apply btn text-white py-3 px-6 text-base bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 hover:from-blue-700 hover:via-purple-700 hover:to-red-700 focus:ring-purple-500;
+        }
+        .btn-nav-adhesion {
+            @apply btn text-white py-2 px-4 text-xs sm:text-sm bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 hover:from-blue-700 hover:via-purple-700 hover:to-red-700 focus:ring-purple-500 shadow-sm hover:shadow-md;
+        }
+        .card {
+            @apply bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+        }
+        .form-input {
+            /* La largeur est maintenant gérée par les classes w-11/12 etc. directement sur l'élément */
+            @apply px-4 py-3 bg-white border border-gray-300 rounded-lg shadow-sm transition-all duration-200 ease-in-out placeholder-gray-400 text-gray-700 text-base;
+        }
+        .form-input:focus {
+            @apply ring-2 ring-purple-500 border-transparent outline-none;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-form-container { /* Conteneur du formulaire d'adhésion dans la section hero */
+            background-color: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(8px);
+            @apply p-6 sm:p-8 rounded-2xl shadow-2xl; /* border-radius augmenté ici */
+        }
+        /* Suppression des styles .input-with-icon et .input-icon */
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <a href="#accueil" class="flex items-center">
+                <img src="unknown1.jpg" alt="Logo Génération IUM" class="h-10 sm:h-12 w-auto mr-2 sm:mr-3" onerror="this.src='https://placehold.co/100x100/32479F/FFFFFF?text=IUM'; this.onerror=null;">
+                <span class="font-extrabold text-xl sm:text-2xl text-[#32479F]">Génération <span class="text-[#D31C2A]">IUM</span></span>
+            </a>
+            <div class="hidden md:flex items-center space-x-2 lg:space-x-3">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#generation-ium" class="nav-link">Le Mouvement</a>
+                <a href="#nos-valeurs" class="nav-link">Nos Valeurs</a>
+                <a href="#objectif" class="nav-link">Objectif</a>
+                <a href="#rejoindre" class="nav-link">Contact</a>
+                <a href="#hero-adhesion-form" class="btn-nav-adhesion">J'ADHÈRE</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <a href="#hero-adhesion-form" class="btn-nav-adhesion mr-2">J'ADHÈRE</a>
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg border-t border-gray-200">
+            <a href="#accueil" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200">Accueil</a>
+            <a href="#generation-ium" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200">Le Mouvement</a>
+            <a href="#nos-valeurs" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200">Nos Valeurs</a>
+            <a href="#objectif" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200">Objectif</a>
+            <a href="#rejoindre" class="block px-6 py-3 text-gray-700 hover:bg-gray-50 transition-colors duration-200">Contact</a>
+        </div>
+    </header>
+
+    <section id="accueil" class="bg-gradient-ium text-white min-h-screen flex items-center py-12 md:py-0">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="md:w-1/2 text-center md:text-left py-8">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+                        Génération <span class="text-red-400">IUM</span>:
+                        <span class="block">L'Avenir se Construit <span class="underline decoration-sky-300 decoration-4">Ensemble</span>.</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl mx-auto md:mx-0">
+                        Rejoignez le premier mouvement français dédié à la nouvelle génération d'entrepreneurs, de créateurs, et d'innovateurs. Portons une voix nouvelle pour la France.
+                    </p>
+                    <a href="#generation-ium" class="hero-cta-button">
+                        Découvrir le Mouvement
+                    </a>
+                </div>
+                <div id="hero-adhesion-form" class="md:w-1/2 w-full max-w-md mx-auto">
+                    <div class="hero-form-container text-gray-800">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-2 text-gradient-ium">ADHÉSION</h2>
+                        <p class="text-center text-gray-600 mb-6 text-sm">L'adhésion est 100% gratuite et rapide.</p>
+                        <form id="adhesion-form" class="space-y-5">
+                            <div>
+                                <label for="adhesion-email" class="sr-only">Email</label>
+                                <input type="email" id="adhesion-email" name="adhesion-email" required class="form-input w-11/12 sm:w-10/12 mx-auto block" placeholder="VOTRE ADRESSE EMAIL">
+                            </div>
+                            <div>
+                                <label for="adhesion-postal" class="sr-only">Code Postal</label>
+                                <input type="text" id="adhesion-postal" name="adhesion-postal" required class="form-input w-11/12 sm:w-10/12 mx-auto block" placeholder="VOTRE CODE POSTAL">
+                            </div>
+                            <button type="submit" class="btn-form-submit w-11/12 sm:w-10/12 mx-auto block">
+                                J'ADHÈRE MAINTENANT
+                            </button>
+                        </form>
+                        <p id="adhesion-form-message" class="mt-4 text-sm text-center h-5"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="generation-ium" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <img src="https://placehold.co/500x80/FFFFFF/32479F?text=Génération+IUM" alt="Titre Génération IUM" class="mx-auto mb-10 h-14 sm:h-16" onerror="this.style.display='none'; this.parentElement.childNodes[1].classList.remove('sr-only')">
+            <h2 class="section-title sr-only">Génération IUM : Le Mouvement</h2>
+            <div class="max-w-3xl mx-auto text-center text-gray-700 space-y-6 text-lg leading-relaxed">
+                <p>Le premier mouvement français pour défendre la nouvelle génération d'entrepreneurs, de créateurs de contenu, d'artistes et de métiers d'internet. Ceux qui se lèvent tôt pour leurs projets et objectifs.</p>
+                <p>Génération IUM veut défendre toute cette partie de notre génération oubliée par beaucoup, ceux qui ont des objectifs forts, des projets énormes, toute cette partie de génération qui se lève tôt, celle trop peu défendue à cause de minorités bruyantes qui veulent défendre des idées destructrices pour notre société. Nous écoutons ces jeunes réfléchis, qui prennent soin d'eux, de leurs idées, de leur capacité à réfléchir au-delà du politiquement correct.</p>
+                <p>Ce mouvement veut écouter ceux qui travaillent dans leur coin, qui ne disent rien, mais qui font de notre société une société encore active et prospère.</p>
+                <div class="mt-10 pt-8 border-t border-gray-200">
+                    <p class="text-md italic text-gray-600">
+                        "En tant que fondateur de Génération IUM, je suis convaincu que l'engagement de chacun est la clé de notre réussite collective. Ensemble, portons une voix nouvelle pour la France." - Maxime Tournier
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nos-valeurs" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="section-title">Nos Valeurs Fondamentales</h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="card text-center">
+                    <img src="https://placehold.co/150x150/32479F/FFFFFF?text=I&font=inter" alt="Indépendant" class="mx-auto mb-6 h-20 w-20 rounded-lg object-cover shadow-lg">
+                    <h3 class="text-2xl font-bold text-[#32479F] mb-3">INDÉPENDANT</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Valoriser l'autonomie, la prise d'initiative et la liberté d'entreprendre pour chaque individu.
+                    </p>
+                </div>
+                <div class="card text-center">
+                    <img src="https://placehold.co/150x150/822E9E/FFFFFF?text=U&font=inter" alt="Union" class="mx-auto mb-6 h-20 w-20 rounded-lg object-cover shadow-lg">
+                    <h3 class="text-2xl font-bold text-[#822E9E] mb-3">UNION</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Fédérer les forces vives de la nation, créer des ponts entre générations et rassembler autour d'un projet commun.
+                    </p>
+                </div>
+                <div class="card text-center">
+                    <img src="https://placehold.co/150x150/D31C2A/FFFFFF?text=M&font=inter" alt="Mouvement" class="mx-auto mb-6 h-20 w-20 rounded-lg object-cover shadow-lg">
+                    <h3 class="text-2xl font-bold text-[#D31C2A] mb-3">MOUVEMENT</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Être une force de proposition dynamique, en constante évolution, pour adapter la France aux défis de demain.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="objectif" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="section-title text-left mb-6 md:text-left">Notre Objectif</h2>
+                    <div class="text-gray-700 text-lg leading-relaxed space-y-4">
+                        <p>
+                            Nous aspirons à transformer la France en un terreau fertile pour l'innovation, l'entrepreneuriat et la créativité. Notre objectif est de libérer les énergies de la nouvelle génération, de simplifier la vie de ceux qui créent de la valeur et de restaurer la confiance dans l'avenir.
+                        </p>
+                        <p>
+                            Nous voulons une France où le mérite est récompensé, où les idées audacieuses sont encouragées, et où chaque citoyen a les moyens de réaliser son plein potentiel. Cela passe par une refonte de notre approche politique, économique et sociale, en plaçant le citoyen au cœur des décisions.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="https://placehold.co/600x400/D31C2A/FFFFFF?text=Image+Illustrant+l'Objectif" alt="Illustration de l'objectif de Génération IUM" class="rounded-xl shadow-xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rejoindre" class="py-16 md:py-24 bg-gradient-ium text-white">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Engagez-vous Avec Nous !</h2>
+            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                Votre voix, vos idées et votre énergie sont précieuses. Contactez-nous pour en savoir plus, proposer vos idées ou vous impliquer activement.
+            </p>
+            
+            <div class="max-w-xl mx-auto bg-white p-6 sm:p-8 rounded-2xl shadow-2xl text-gray-800 mb-12">
+                <h3 class="text-2xl font-semibold mb-6 text-center text-gradient-ium">Contact & Contribution</h3>
+                <form id="contact-form" class="space-y-5">
+                    <div>
+                        <label for="contact-name" class="sr-only">Nom Complet</label>
+                        <input type="text" id="contact-name" name="contact-name" required class="form-input w-11/12 sm:w-10/12 mx-auto block" placeholder="Votre Nom Complet">
+                    </div>
+                    <div>
+                        <label for="contact-email" class="sr-only">Adresse Email</label>
+                        <input type="email" id="contact-email" name="contact-email" required class="form-input w-11/12 sm:w-10/12 mx-auto block" placeholder="Votre Adresse Email">
+                    </div>
+                    <div>
+                        <label for="contact-message" class="sr-only">Votre Message</label>
+                        <textarea id="contact-message" name="contact-message" rows="4" class="form-input w-11/12 sm:w-10/12 mx-auto block" placeholder="Votre message, vos idées, comment souhaitez-vous contribuer ?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-form-submit w-11/12 sm:w-10/12 mx-auto block">
+                        Envoyer le Message
+                    </button>
+                </form>
+                <p id="contact-form-message" class="mt-4 text-sm text-center h-5"></p>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-6">Suivez-nous et Participez :</h3>
+            <div class="flex justify-center space-x-4 sm:space-x-6">
+                <a href="#" target="_blank" rel="noopener noreferrer" title="Facebook" class="text-blue-200 hover:text-white transition-colors duration-300">
+                    <svg class="w-9 h-9 sm:w-10 sm:h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12Z" clip-rule="evenodd" /></svg>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" title="Twitter (X)" class="text-blue-200 hover:text-white transition-colors duration-300">
+                    <svg class="w-9 h-9 sm:w-10 sm:h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+                    <span class="sr-only">Twitter (X)</span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" title="Instagram" class="text-blue-200 hover:text-white transition-colors duration-300">
+                     <svg class="w-9 h-9 sm:w-10 sm:h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm6-2h-1.5V4.5H18V6zm-1.75 1.5a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5h-1.5z" clip-rule="evenodd" /><path d="M12 14.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z" /></svg>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                 <a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="text-blue-200 hover:text-white transition-colors duration-300">
+                    <svg class="w-9 h-9 sm:w-10 sm:h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.75 2.25H4.25A2.25 2.25 0 0 0 2 4.5v15A2.25 2.25 0 0 0 4.25 21.75H19.75A2.25 2.25 0 0 0 22 19.5v-15A2.25 2.25 0 0 0 19.75 2.25ZM8.25 18.75H5.25v-8.25h3v8.25ZM6.75 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm11.25 9.75h-3V14.25c0-.75-.025-1.75-1.125-1.75S12.75 13.5 12.75 14.25v4.5h-3v-8.25h2.875v1.375h.05c.375-.75 1.375-1.5 2.875-1.5 3 0 3.625 2 3.625 4.5v3.875Z"/></svg>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <img src="unknown1.jpg" alt="Logo Génération IUM" class="h-20 w-auto mx-auto mb-4 rounded-md" onerror="this.src='https://placehold.co/180x180/FFFFFF/32479F?text=IUM&font=inter'; this.onerror=null;">
+            <h2 class="text-2xl font-bold text-white mb-6">GÉNÉRATION IUM</h2>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 mb-6 text-sm">
+                <a href="#legal" class="hover:text-white transition-colors duration-300">Mentions Légales</a>
+                <a href="#hero-adhesion-form" class="hover:text-white transition-colors duration-300">Adhérer</a>
+                <a href="#cgu" class="hover:text-white transition-colors duration-300">Conditions Générales d'Utilisation</a>
+                <a href="#rejoindre" class="hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+            <div class="border-t border-gray-700 pt-6">
+                <p class="text-sm">&copy; <span id="currentYear"></span> Génération IUM. Tous droits réservés.</p>
+                <p class="text-xs mt-1">Mouvement politique français pour la nouvelle génération.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour le menu mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a, .nav-link, header a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href').startsWith('#') && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function handleFormSubmission(form, messageElement, successMessage) {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+                const firstInput = form.querySelector('input[type="email"], input[type="text"]');
+                const nameOrEmail = firstInput ? firstInput.value : 'cher visiteur';
+                
+                messageElement.textContent = 'Envoi en cours...';
+                messageElement.className = 'mt-4 text-sm text-center text-gray-500 h-5';
+
+                setTimeout(() => {
+                    console.log('Données du formulaire (simulation):', Object.fromEntries(formData));
+                    messageElement.textContent = successMessage(nameOrEmail);
+                    messageElement.className = 'mt-4 text-sm text-center text-green-600 h-5';
+                    form.reset();
+                    setTimeout(() => { 
+                        messageElement.textContent = ''; 
+                        messageElement.className = 'mt-4 text-sm text-center h-5';
+                    }, 7000);
+                }, 1000);
+            });
+        }
+
+        const adhesionForm = document.getElementById('adhesion-form');
+        const adhesionFormMessage = document.getElementById('adhesion-form-message');
+        if (adhesionForm) { 
+            handleFormSubmission(adhesionForm, adhesionFormMessage, (email) => `Merci ! Votre demande d'adhésion avec l'email ${email} a été enregistrée.`);
+        }
+
+        const contactForm = document.getElementById('contact-form');
+        const contactFormMessage = document.getElementById('contact-form-message');
+        if (contactForm) { 
+            handleFormSubmission(contactForm, contactFormMessage, (name) => `Merci ${name}, votre message a bien été envoyé ! Nous vous recontacterons bientôt.`);
+        }
+    </script>
+
+</body>
+</html>
