@@ -127,7 +127,9 @@
                     <div class="hero-form-container text-gray-800">
                         <h2 class="text-2xl sm:text-3xl font-bold text-center mb-2 text-gradient-ium">ADHÉSION</h2>
                         <p class="text-center text-gray-600 mb-6 text-sm">L'adhésion est 100% gratuite et rapide.</p>
-                        <form id="adhesion-form" class="space-y-5">
+                        <form id="adhesion-form" class="space-y-5"
+                              action="https://formspree.io/f/mblonepq"
+                              method="POST">
                             <div>
                                 <label for="adhesion-email" class="sr-only">Email</label>
                                 <input type="email" id="adhesion-email" name="adhesion-email" required class="form-input w-11/12 sm:w-10/12 mx-auto block" placeholder="VOTRE ADRESSE EMAIL">
@@ -223,7 +225,9 @@
             
             <div class="max-w-xl mx-auto bg-white p-6 sm:p-8 rounded-2xl shadow-2xl text-gray-800 mb-12">
                 <h3 class="text-2xl font-semibold mb-6 text-center text-gradient-ium">Contact & Contribution</h3>
-                <form id="contact-form" class="space-y-5">
+                <form id="contact-form" class="space-y-5"
+                      action="https://formspree.io/f/xanorzlg"
+                      method="POST">
                     <div>
                         <label for="contact-name" class="sr-only">Nom Complet</label>
                         <input type="text" id="contact-name" name="contact-name" required class="form-input w-11/12 sm:w-10/12 mx-auto block" placeholder="Votre Nom Complet">
@@ -300,39 +304,39 @@
         
         document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-        function handleFormSubmission(form, messageElement, successMessage) {
-            form.addEventListener('submit', function(event) {
-                event.preventDefault();
-                const formData = new FormData(form);
-                const firstInput = form.querySelector('input[type="email"], input[type="text"]');
-                const nameOrEmail = firstInput ? firstInput.value : 'cher visiteur';
-                
-                messageElement.textContent = 'Envoi en cours...';
-                messageElement.className = 'mt-4 text-sm text-center text-gray-500 h-5';
-
-                setTimeout(() => {
-                    console.log('Données du formulaire (simulation):', Object.fromEntries(formData));
-                    messageElement.textContent = successMessage(nameOrEmail);
-                    messageElement.className = 'mt-4 text-sm text-center text-green-600 h-5';
-                    form.reset();
-                    setTimeout(() => { 
-                        messageElement.textContent = ''; 
-                        messageElement.className = 'mt-4 text-sm text-center h-5';
-                    }, 7000);
-                }, 1000);
-            });
-        }
-
-        const adhesionForm = document.getElementById('adhesion-form');
-        const adhesionFormMessage = document.getElementById('adhesion-form-message');
-        if (adhesionForm) { 
-            handleFormSubmission(adhesionForm, adhesionFormMessage, (email) => `Merci ! Votre demande d'adhésion avec l'email ${email} a été enregistrée.`);
-        }
-
-        const contactForm = document.getElementById('contact-form');
-        const contactFormMessage = document.getElementById('contact-form-message');
-        if (contactForm) { 
-            handleFormSubmission(contactForm, contactFormMessage, (name) => `Merci ${name}, votre message a bien été envoyé ! Nous vous recontacterons bientôt.`);
+        // function handleFormSubmission(form, messageElement, successMessage) {
+        //     form.addEventListener('submit', function(event) {
+        //         event.preventDefault();
+        //         const formData = new FormData(form);
+        //         const firstInput = form.querySelector('input[type="email"], input[type="text"]');
+        //         const nameOrEmail = firstInput ? firstInput.value : 'cher visiteur';
+        //
+        //         messageElement.textContent = 'Envoi en cours...';
+        //         messageElement.className = 'mt-4 text-sm text-center text-gray-500 h-5';
+        //
+        //         setTimeout(() => {
+        //             console.log('Données du formulaire (simulation):', Object.fromEntries(formData));
+        //             messageElement.textContent = successMessage(nameOrEmail);
+        //             messageElement.className = 'mt-4 text-sm text-center text-green-600 h-5';
+        //             form.reset();
+        //             setTimeout(() => {
+        //                 messageElement.textContent = '';
+        //                 messageElement.className = 'mt-4 text-sm text-center h-5';
+        //             }, 7000);
+        //         }, 1000);
+        //     });
+        // }
+        //
+        // const adhesionForm = document.getElementById('adhesion-form');
+        // const adhesionFormMessage = document.getElementById('adhesion-form-message');
+        // if (adhesionForm) {
+        //     handleFormSubmission(adhesionForm, adhesionFormMessage, (email) => `Merci ! Votre demande d'adhésion avec l'email ${email} a été enregistrée.`);
+        // }
+        //
+        // const contactForm = document.getElementById('contact-form');
+        // const contactFormMessage = document.getElementById('contact-form-message');
+        // if (contactForm) {
+        //     handleFormSubmission(contactForm, contactFormMessage, (name) => `Merci ${name}, votre message a bien été envoyé ! Nous vous recontacterons bientôt.`);
         }
     </script>
 
