@@ -1,0 +1,24 @@
+# Génération IUM — https://www.generation-ium.fr
+User-agent: *
+Allow: /
+Disallow: /.idea/
+Disallow: /.github/
+Disallow: /.tyrogit/
+
+# Moteurs de réponse et assistants IA : accès autorisé (GEO)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: MistralAI-User
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://www.generation-ium.fr/sitemap.xml

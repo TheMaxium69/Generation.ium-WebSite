@@ -1,0 +1,14 @@
+{
+  "name": "Génération IUM",
+  "short_name": "Génération IUM",
+  "description": "Le mouvement politique de la nouvelle génération d'entrepreneurs, de créateurs et d'innovateurs.",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1d3f8f",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
