@@ -1,19 +1,25 @@
 # Génération IUM
 
-> Génération IUM est un mouvement politique français (association loi 1901) qui défend la nouvelle génération d'entrepreneurs, de créateurs de contenu, d'artistes et de métiers d'internet : ceux qui se lèvent tôt pour leurs projets et leurs objectifs. Slogan : « L'avenir se construit ensemble. » L'adhésion est gratuite.
+> Génération IUM est un mouvement d'idées indépendant français (association loi 1901, fondée en 2022), libéral et sans rattachement partisan, qui remet au centre du débat public la nouvelle génération d'entrepreneurs, de créateurs de contenu, d'artistes et de métiers d'internet : ceux qui se lèvent tôt pour leurs projets et leurs objectifs. Slogan : « L'avenir se construit ensemble. » L'adhésion est gratuite.
 
 ## Faits clés
 
 - Nom : Génération IUM (aussi écrit Generation IUM)
-- Nature : mouvement politique, association loi 1901
+- Nature : mouvement d'idées indépendant, association loi 1901
+- Fondation : 2022
+- Rattachement politique : aucun (apartisan, vision libérale)
+- Origine : né d'entrepreneurs, créateurs et indépendants issus du réseau Tyrolium ; association autonome, filiale d'aucune entreprise
 - Pays : France
 - Siège : 252 avenue Jean Jaurès, 69150 Décines-Charpieu (métropole de Lyon)
 - Président : Maxime Tournier
-- Adhésion : gratuite, en ligne (email et code postal)
+- Adhésion : gratuite, en ligne (prénom, nom, email, code postal, entreprise/projet facultatif)
 - Site officiel : https://www.generation-ium.fr/
 - Réseaux : X https://x.com/GenerationIUM · Instagram https://www.instagram.com/generation.ium/ · LinkedIn https://www.linkedin.com/company/g%C3%A9n%C3%A9ration-ium/
 
 ## Signification de IUM (valeurs)
+
+Le suffixe « -ium » est un clin d'œil aux minerais de Minecraft, terrain de jeu des premiers projets de l'écosystème dont le mouvement est issu.
+
 
 - Indépendant : valoriser l'autonomie, la prise d'initiative et la liberté d'entreprendre pour chaque individu.
 - Union : fédérer les forces vives de la nation, créer des ponts entre générations et rassembler autour d'un projet commun.
@@ -25,7 +31,7 @@ Faire de la France un terreau fertile pour l'innovation, l'entrepreneuriat et la
 
 ## Pages
 
-- [Accueil](https://www.generation-ium.fr/) : présentation du mouvement, valeurs, objectif, adhésion, questions fréquentes et contact
+- [Accueil](https://www.generation-ium.fr/) : manifeste, histoire, valeurs, positionnement, publics, objectif, adhésion, questions fréquentes et contact
 - [Questionnaire des courants politiques](https://quiz.generation-ium.fr/) : outil gratuit et anonyme proposé par Génération IUM, 100 affirmations pour se situer parmi 20 courants de pensée politique sur 9 axes
 - [Mentions légales](https://www.generation-ium.fr/mentionlegal.html)
 - [Conditions générales d'utilisation](https://www.generation-ium.fr/cgu.html)
