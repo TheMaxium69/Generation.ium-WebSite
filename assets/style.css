@@ -360,7 +360,7 @@ main {
   max-width: 420px;
 }
 
-.adhesion {
+.join-card {
   position: relative;
   overflow: hidden;
   border-radius: 18px;
@@ -368,7 +368,7 @@ main {
   background: linear-gradient(160deg, var(--blue-soft), var(--surface) 70%);
   padding: 24px 20px;
 }
-.adhesion::before {
+.join-card::before {
   content: '';
   position: absolute;
   inset: 0 0 auto;
@@ -388,11 +388,11 @@ main {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.adhesion h2 {
+.join-card h2 {
   font-size: 24px;
   margin: 12px 0 6px;
 }
-.adhesion > p {
+.join-card > p {
   color: var(--ink-2);
   margin-bottom: 18px;
 }
@@ -639,7 +639,7 @@ main {
     flex-direction: row;
     max-width: none;
   }
-  .adhesion {
+  .join-card {
     padding: 32px;
   }
   .section {
